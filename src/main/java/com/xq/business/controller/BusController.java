@@ -12,9 +12,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("bus")
 public class BusController {
-//   是跳转是的我服了啊 是你的错啊 啊啊啊
+    /**
+     * 跳转
+     * @return
+     */
     @RequestMapping("toCustomerManager")
     public String toCustomerManager() {
+        //这是跳转的
         return "business/customer/customerManager";
     }
 

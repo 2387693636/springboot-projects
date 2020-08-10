@@ -21,7 +21,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 @MapperScan({"com.xq.business.mapper","com.xq.statistics.mapper","com.xq.system.mapper"})
 public class MyBikerentSpringbootApplication {
 
-	/**
+	/** 启动
 	 * @param args
 	 */
 	public static void main(String[] args) {

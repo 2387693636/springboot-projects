@@ -1,0 +1,1138 @@
+4439385 DEBUG [2020-05-15 23:57:07]  {conn-10005, pstmt-20004} executed. 6.123 millis. select
+         
+    identity, custname, sex, address, phone, career, createtime
+   
+        from bus_customer
+          
+        order by createtime
+4439385 DEBUG [2020-05-15 23:57:07]  {conn-10005, pstmt-20004, rs-50032} open
+4439385 DEBUG [2020-05-15 23:57:07]  {conn-10005, pstmt-20004, rs-50032} Header: [identity, custname, sex, address, phone, career, createtime]
+4439385 DEBUG [2020-05-15 23:57:07]  {conn-10005, pstmt-20004, rs-50032} Result: [43131334113331131, 邹向前, 1, 武昌, 13888888888, 国家最高领导人, 2019-05-07 14:52:24.0]
+4439386 DEBUG [2020-05-15 23:57:07]  {conn-10005, pstmt-20004, rs-50032} Result: [421087133414144412, 张小, 1, 武昌, 13456788987, 程序员, 2019-05-07 14:52:24.0]
+4439386 DEBUG [2020-05-15 23:57:07]  {conn-10005, pstmt-20004, rs-50032} Result: [431321199291331131, 张三, 1, 武昌, 13431334113, 程序员, 2019-05-07 14:52:24.0]
+4439386 DEBUG [2020-05-15 23:57:07]  {conn-10005, pstmt-20004, rs-50032} Result: [431321199291331132, 孙中, 1, 汉口, 134131314131, 总统, 2019-05-07 14:52:24.0]
+4439387 DEBUG [2020-05-15 23:57:07]  {conn-10005, pstmt-20004, rs-50032} Result: [431341134191311311, 李四, 0, 汉阳, 13451313113, CEO1, 2019-05-07 14:52:24.0]
+4439387 DEBUG [2020-05-15 23:57:07]  {conn-10005, pstmt-20004, rs-50032} Result: [431341134191311314, 王明, 1, 汉口, 13413131113, CEO2, 2019-05-07 14:52:24.0]
+4439387 DEBUG [2020-05-15 23:57:07]  {conn-10005, pstmt-20004, rs-50032} closed
+4439387 DEBUG [2020-05-15 23:57:07]  {conn-10005, pstmt-20004} clearParameters. 
+4439387 DEBUG [2020-05-15 23:57:07]  {conn-10005} pool-recycle
+4587178 DEBUG [2020-05-15 23:59:35]  {conn-10005} pool-connect
+4587178 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20000} Parameters : [1, e10adc3949ba59abbe56e057f20f883e]
+4587178 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
+4587179 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20000} executed. 0.9613 millis. select userid, loginname, identity, realname, sex, address, phone, pwd, position, type,
+        available
+         
+    userid, loginname, identity, realname, sex, address, phone, pwd, position, type, 
+    available
+   
+        from sys_user
+        where loginname=? and pwd=?
+4587179 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20000, rs-50033} open
+4587179 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20000, rs-50033} Header: [userid, loginname, identity, realname, sex, address, phone, pwd, position, type, available, loginname, identity, realname, sex, address, phone, pwd, position, type, available]
+4587180 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20000, rs-50033} Result: [1, 1, 4313341334413, 超级管理员1, 1, 株洲, 134441331311, e10adc3949ba59abbe56e057f20f883e, CEO, 1, 1, 1, 4313341334413, 超级管理员1, 1, 株洲, 134441331311, e10adc3949ba59abbe56e057f20f883e, CEO, 1, 1]
+4587180 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20000, rs-50033} closed
+4587180 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20000} clearParameters. 
+4587180 DEBUG [2020-05-15 23:59:35]  {conn-10005} pool-recycle
+4587181 DEBUG [2020-05-15 23:59:35]  {conn-10005} pool-connect
+4587181 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20001} Parameters : [null, 1:超级管理员1, 0:0:0:0:0:0:0:1, 2020-05-15 23:59:35.507]
+4587181 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20001} Types : [INTEGER, VARCHAR, VARCHAR, TIMESTAMP]
+4587230 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20001} executed. 48.9641 millis. insert into sys_log_login (id, loginname, loginip, logintime)
+        values (?, ?, ?,
+        ?)
+4587230 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20001, rs-50034} open
+4587230 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20001, rs-50034} Header: [GENERATED_KEY]
+4587231 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20001, rs-50034} Result: [321]
+4587231 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20001, rs-50034} closed
+4587231 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20001} clearParameters. 
+4587231 DEBUG [2020-05-15 23:59:35]  {conn-10005} pool-recycle
+4587421 DEBUG [2020-05-15 23:59:35]  {conn-10005} pool-connect
+4587421 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002} Parameters : [1]
+4587421 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002} Types : [INTEGER]
+4587422 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002} executed. 0.5248 millis. select
+         
+    id, pid, title, href, spread, target, icon, available
+   
+        from sys_menu
+         WHERE  available=?
+4587422 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} open
+4587422 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Header: [id, pid, title, href, spread, target, icon, available]
+4587422 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [1, 0, 自行车车出租系统, null, 1, null, &#xe68e;, 1]
+4587422 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [2, 1, 基础管理, , 1, , &#xe653;, 1]
+4587422 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [3, 1, 业务管理, , 1, , &#xe663;, 1]
+4587422 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [4, 1, 系统管理, , 0, , &#xe716;, 1]
+4587422 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [5, 1, 统计分析, null, 0, null, &#xe629;, 1]
+4587422 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [6, 2, 客户管理, ../bus/toCustomerManager, 0, , &#xe770;, 1]
+4587422 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [7, 2, 车辆管理, ../bus/toCarManager, 0, , &#xe657;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [8, 3, 汽车出租, ../bus/toRentCarManager, 0, , &#xe65b;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [9, 3, 出租单管理, ../bus/toRentManager, 0, , &#xe6b2;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [10, 3, 自行车入库, ../bus/toCheckCarManager, 0, , &#xe65a;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [11, 3, 检查单管理, ../bus/toCheckManager, 0, , &#xe705;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [12, 4, 菜单管理, ../sys/toMenuManager, 0, null, &#xe60f;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [13, 4, 角色管理, ../sys/toRoleManager, 0, , &#xe66f;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [14, 4, 用户管理, ../sys/toUserManager, 0, , &#xe770;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [15, 4, 日志管理, ../sys/toLogInfoManager, 0, , &#xe655;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [16, 4, 公告管理, ../sys/toNewsManager, 0, , &#xe645;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [17, 4, 数据源监控, ../druid/, 0, , &#xe857;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [18, 5, 客户地区统计, ../stat/toCustomerAreaStat, 0, , &#xe63c;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [19, 5, 公司年度月份销售额, ../stat/toCompanyYearGradeStat, 0, , &#xe62c;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} Result: [20, 5, 业务员年度销售额, ../stat/toOpernameYearGradeStat, 0, , &#xe62d;, 1]
+4587423 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002, rs-50035} closed
+4587424 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20002} clearParameters. 
+4587424 DEBUG [2020-05-15 23:59:35]  {conn-10005} pool-recycle
+4587467 DEBUG [2020-05-15 23:59:35]  {conn-10005} pool-connect
+4587467 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003} Parameters : []
+4587467 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003} Types : []
+4587468 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003} executed. 0.5714 millis. select
+         
+    id, title, content, createtime, opername
+   
+        from sys_news
+          
+        order by createtime desc
+4587468 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} open
+4587468 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Header: [id, title, content, createtime, opername]
+4587468 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [8, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+4587468 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [14, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+4587468 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [15, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+4587468 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [16, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+4587468 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [4, 关于系统V1.5升级公告, <p>关于系统V1.5升级公告</p>, 2020-04-23 16:30:18.0, 习大大]
+4587468 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [12, 关于系统V1.5升级公告, <p>关于系统V1.5升级公告</p>, 2020-04-23 16:30:18.0, 习大大]
+4587469 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [13, 关于系统V1.5升级公告, <p>关于系统V1.5升级公告</p>, 2020-04-23 16:30:18.0, 习大大]
+4587469 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [10, 关于系统V1.3升级公告, <p>12312312312312312312</p>, 2020-04-19 14:10:11.0, 超级管理员]
+4587469 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [1, 关于系统V1.0发布公告, <p>关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告			</p>, 2020-04-14 18:05:22.0, 习大大]
+4587469 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [5, 关于系统V1.0发布公告, <p>关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告			</p>, 2020-04-14 18:05:22.0, 习大大]
+4587469 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [9, 关于系统V1.0发布公告, <p>关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告			</p>, 2020-04-14 18:05:22.0, 习大大]
+4587469 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [3, 关于系统V1.4升级公告, <p>312312312</p>, 2020-04-11 11:30:15.0, 超级管理员]
+4587469 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [7, 关于系统V1.4升级公告, <p>312312312</p>, 2020-04-11 11:30:15.0, 超级管理员]
+4587469 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [11, 关于系统V1.4升级公告, <p>312312312</p>, 2020-04-11 11:30:15.0, 超级管理员]
+4587469 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [2, 关于系统V1.3升级公告, <p>12312312312312312312</p>, 2020-03-19 14:10:11.0, 超级管理员]
+4587469 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} Result: [6, 关于系统V1.3升级公告, <p>12312312312312312312</p>, 2020-03-19 14:10:11.0, 超级管理员]
+4587469 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003, rs-50036} closed
+4587470 DEBUG [2020-05-15 23:59:35]  {conn-10005, pstmt-20003} clearParameters. 
+4587470 DEBUG [2020-05-15 23:59:35]  {conn-10005} pool-recycle
+4590232 DEBUG [2020-05-15 23:59:38]  {conn-10005} pool-connect
+4590232 DEBUG [2020-05-15 23:59:38]  {conn-10005, pstmt-20004} Parameters : []
+4590232 DEBUG [2020-05-15 23:59:38]  {conn-10005, pstmt-20004} Types : []
+4590233 DEBUG [2020-05-15 23:59:38]  {conn-10005, pstmt-20004} executed. 0.6508 millis. select
+         
+    identity, custname, sex, address, phone, career, createtime
+   
+        from bus_customer
+          
+        order by createtime
+4590233 DEBUG [2020-05-15 23:59:38]  {conn-10005, pstmt-20004, rs-50037} open
+4590233 DEBUG [2020-05-15 23:59:38]  {conn-10005, pstmt-20004, rs-50037} Header: [identity, custname, sex, address, phone, career, createtime]
+4590233 DEBUG [2020-05-15 23:59:38]  {conn-10005, pstmt-20004, rs-50037} Result: [43131334113331131, 邹向前, 1, 武昌, 13888888888, 国家最高领导人, 2020-04-07 14:52:24.0]
+4590233 DEBUG [2020-05-15 23:59:38]  {conn-10005, pstmt-20004, rs-50037} Result: [421087133414144412, 张小, 1, 武昌, 13456788987, 程序员, 2020-04-07 14:52:24.0]
+4590233 DEBUG [2020-05-15 23:59:38]  {conn-10005, pstmt-20004, rs-50037} Result: [431321199291331131, 张三, 1, 武昌, 13431334113, 程序员, 2020-04-07 14:52:24.0]
+4590233 DEBUG [2020-05-15 23:59:38]  {conn-10005, pstmt-20004, rs-50037} Result: [431321199291331132, 孙中, 1, 汉口, 134131314131, 总统, 2020-04-07 14:52:24.0]
+4590233 DEBUG [2020-05-15 23:59:38]  {conn-10005, pstmt-20004, rs-50037} Result: [431341134191311311, 李四, 0, 汉阳, 13451313113, CEO1, 2020-04-17 14:52:24.0]
+4590233 DEBUG [2020-05-15 23:59:38]  {conn-10005, pstmt-20004, rs-50037} Result: [431341134191311314, 王明, 1, 汉口, 13413131113, CEO2, 2020-05-07 14:52:24.0]
+4590233 DEBUG [2020-05-15 23:59:38]  {conn-10005, pstmt-20004, rs-50037} closed
+4590233 DEBUG [2020-05-15 23:59:38]  {conn-10005, pstmt-20004} clearParameters. 
+4590233 DEBUG [2020-05-15 23:59:38]  {conn-10005} pool-recycle
+4679479 DEBUG [2020-05-16 00:01:07]  {conn-10005} pool-connect
+4679479 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20006} Parameters : [邹向前, 1, 武昌, 13456788987, 程序员, 421087133414144412]
+4679479 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20006} Types : [VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
+4679564 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20006} executed. 85.0513 millis. update bus_customer
+         SET custname = ?,
+            
+            
+                sex = ?,
+            
+            
+                address = ?,
+            
+            
+                phone = ?,
+            
+            
+                career = ? 
+        where identity = ?
+4679564 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20006} clearParameters. 
+4679564 DEBUG [2020-05-16 00:01:07]  {conn-10005} pool-recycle
+4679583 DEBUG [2020-05-16 00:01:07]  {conn-10005} pool-connect
+4679583 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20004} Parameters : []
+4679583 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20004} Types : []
+4679584 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20004} executed. 0.5857 millis. select
+         
+    identity, custname, sex, address, phone, career, createtime
+   
+        from bus_customer
+          
+        order by createtime
+4679584 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20004, rs-50038} open
+4679584 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20004, rs-50038} Header: [identity, custname, sex, address, phone, career, createtime]
+4679584 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20004, rs-50038} Result: [43131334113331131, 邹向前, 1, 武昌, 13888888888, 国家最高领导人, 2020-04-07 14:52:24.0]
+4679584 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20004, rs-50038} Result: [421087133414144412, 邹向前, 1, 武昌, 13456788987, 程序员, 2020-04-07 14:52:24.0]
+4679585 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20004, rs-50038} Result: [431321199291331131, 张三, 1, 武昌, 13431334113, 程序员, 2020-04-07 14:52:24.0]
+4679585 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20004, rs-50038} Result: [431321199291331132, 孙中, 1, 汉口, 134131314131, 总统, 2020-04-07 14:52:24.0]
+4679585 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20004, rs-50038} Result: [431341134191311311, 李四, 0, 汉阳, 13451313113, CEO1, 2020-04-17 14:52:24.0]
+4679585 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20004, rs-50038} Result: [431341134191311314, 王明, 1, 汉口, 13413131113, CEO2, 2020-05-07 14:52:24.0]
+4679585 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20004, rs-50038} closed
+4679585 DEBUG [2020-05-16 00:01:07]  {conn-10005, pstmt-20004} clearParameters. 
+4679585 DEBUG [2020-05-16 00:01:07]  {conn-10005} pool-recycle
+4686381 DEBUG [2020-05-16 00:01:14]  {conn-10005} pool-connect
+4686381 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20006} Parameters : [李四, 1, 汉阳, 13451313113, CEO1, 431341134191311311]
+4686381 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20006} Types : [VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
+4686420 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20006} executed. 39.4437 millis. update bus_customer
+         SET custname = ?,
+            
+            
+                sex = ?,
+            
+            
+                address = ?,
+            
+            
+                phone = ?,
+            
+            
+                career = ? 
+        where identity = ?
+4686420 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20006} clearParameters. 
+4686420 DEBUG [2020-05-16 00:01:14]  {conn-10005} pool-recycle
+4686436 DEBUG [2020-05-16 00:01:14]  {conn-10005} pool-connect
+4686437 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20004} Parameters : []
+4686437 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20004} Types : []
+4686437 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20004} executed. 0.5279 millis. select
+         
+    identity, custname, sex, address, phone, career, createtime
+   
+        from bus_customer
+          
+        order by createtime
+4686437 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20004, rs-50039} open
+4686437 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20004, rs-50039} Header: [identity, custname, sex, address, phone, career, createtime]
+4686437 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20004, rs-50039} Result: [43131334113331131, 邹向前, 1, 武昌, 13888888888, 国家最高领导人, 2020-04-07 14:52:24.0]
+4686438 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20004, rs-50039} Result: [421087133414144412, 邹向前, 1, 武昌, 13456788987, 程序员, 2020-04-07 14:52:24.0]
+4686438 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20004, rs-50039} Result: [431321199291331131, 张三, 1, 武昌, 13431334113, 程序员, 2020-04-07 14:52:24.0]
+4686438 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20004, rs-50039} Result: [431321199291331132, 孙中, 1, 汉口, 134131314131, 总统, 2020-04-07 14:52:24.0]
+4686438 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20004, rs-50039} Result: [431341134191311311, 李四, 1, 汉阳, 13451313113, CEO1, 2020-04-17 14:52:24.0]
+4686438 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20004, rs-50039} Result: [431341134191311314, 王明, 1, 汉口, 13413131113, CEO2, 2020-05-07 14:52:24.0]
+4686438 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20004, rs-50039} closed
+4686438 DEBUG [2020-05-16 00:01:14]  {conn-10005, pstmt-20004} clearParameters. 
+4686438 DEBUG [2020-05-16 00:01:14]  {conn-10005} pool-recycle
+4692083 DEBUG [2020-05-16 00:01:20]  {conn-10005} pool-connect
+4692083 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20006} Parameters : [李四, 0, 汉阳, 13451313113, CEO1, 431341134191311311]
+4692083 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20006} Types : [VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
+4692134 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20006} executed. 50.9986 millis. update bus_customer
+         SET custname = ?,
+            
+            
+                sex = ?,
+            
+            
+                address = ?,
+            
+            
+                phone = ?,
+            
+            
+                career = ? 
+        where identity = ?
+4692134 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20006} clearParameters. 
+4692135 DEBUG [2020-05-16 00:01:20]  {conn-10005} pool-recycle
+4692152 DEBUG [2020-05-16 00:01:20]  {conn-10005} pool-connect
+4692152 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20004} Parameters : []
+4692152 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20004} Types : []
+4692152 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20004} executed. 0.465 millis. select
+         
+    identity, custname, sex, address, phone, career, createtime
+   
+        from bus_customer
+          
+        order by createtime
+4692152 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20004, rs-50040} open
+4692152 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20004, rs-50040} Header: [identity, custname, sex, address, phone, career, createtime]
+4692153 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20004, rs-50040} Result: [43131334113331131, 邹向前, 1, 武昌, 13888888888, 国家最高领导人, 2020-04-07 14:52:24.0]
+4692153 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20004, rs-50040} Result: [421087133414144412, 邹向前, 1, 武昌, 13456788987, 程序员, 2020-04-07 14:52:24.0]
+4692153 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20004, rs-50040} Result: [431321199291331131, 张三, 1, 武昌, 13431334113, 程序员, 2020-04-07 14:52:24.0]
+4692153 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20004, rs-50040} Result: [431321199291331132, 孙中, 1, 汉口, 134131314131, 总统, 2020-04-07 14:52:24.0]
+4692153 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20004, rs-50040} Result: [431341134191311311, 李四, 0, 汉阳, 13451313113, CEO1, 2020-04-17 14:52:24.0]
+4692153 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20004, rs-50040} Result: [431341134191311314, 王明, 1, 汉口, 13413131113, CEO2, 2020-05-07 14:52:24.0]
+4692153 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20004, rs-50040} closed
+4692153 DEBUG [2020-05-16 00:01:20]  {conn-10005, pstmt-20004} clearParameters. 
+4692153 DEBUG [2020-05-16 00:01:20]  {conn-10005} pool-recycle
+5166779 DEBUG [2020-05-16 00:09:15]  {conn-10005} pool-connect
+5166780 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20006} Parameters : [邹向前, 0, 武昌, 13888888888, 国家最高领导人, 43131334113331131]
+5166781 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20006} Types : [VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
+5166822 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20006} executed. 41.9087 millis. update bus_customer
+         SET custname = ?,
+            
+            
+                sex = ?,
+            
+            
+                address = ?,
+            
+            
+                phone = ?,
+            
+            
+                career = ? 
+        where identity = ?
+5166823 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20006} clearParameters. 
+5166823 DEBUG [2020-05-16 00:09:15]  {conn-10005} pool-recycle
+5166859 DEBUG [2020-05-16 00:09:15]  {conn-10005} pool-connect
+5166859 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20004} Parameters : []
+5166859 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20004} Types : []
+5166860 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20004} executed. 0.9603 millis. select
+         
+    identity, custname, sex, address, phone, career, createtime
+   
+        from bus_customer
+          
+        order by createtime
+5166860 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20004, rs-50041} open
+5166861 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20004, rs-50041} Header: [identity, custname, sex, address, phone, career, createtime]
+5166861 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20004, rs-50041} Result: [43131334113331131, 邹向前, 0, 武昌, 13888888888, 国家最高领导人, 2020-04-07 14:52:24.0]
+5166862 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20004, rs-50041} Result: [421087133414144412, 邹向前, 1, 武昌, 13456788987, 程序员, 2020-04-07 14:52:24.0]
+5166862 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20004, rs-50041} Result: [431321199291331131, 张三, 1, 武昌, 13431334113, 程序员, 2020-04-07 14:52:24.0]
+5166862 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20004, rs-50041} Result: [431321199291331132, 孙中, 1, 汉口, 134131314131, 总统, 2020-04-07 14:52:24.0]
+5166862 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20004, rs-50041} Result: [431341134191311311, 李四, 0, 汉阳, 13451313113, CEO1, 2020-04-17 14:52:24.0]
+5166863 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20004, rs-50041} Result: [431341134191311314, 王明, 1, 汉口, 13413131113, CEO2, 2020-05-07 14:52:24.0]
+5166866 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20004, rs-50041} closed
+5166866 DEBUG [2020-05-16 00:09:15]  {conn-10005, pstmt-20004} clearParameters. 
+5166866 DEBUG [2020-05-16 00:09:15]  {conn-10005} pool-recycle
+5177032 DEBUG [2020-05-16 00:09:25]  {conn-10005} pool-connect
+5177035 DEBUG [2020-05-16 00:09:25]  {conn-10005, pstmt-20007} created. select
+         
+    carnumber, cartype, color, price, rentprice, deposit, isrenting, description, carimg, 
+    createtime
+   
+        from bus_car
+5177035 DEBUG [2020-05-16 00:09:25]  {conn-10005, pstmt-20007} Parameters : []
+5177035 DEBUG [2020-05-16 00:09:25]  {conn-10005, pstmt-20007} Types : []
+5177036 DEBUG [2020-05-16 00:09:25]  {conn-10005, pstmt-20007} executed. 0.7959 millis. select
+         
+    carnumber, cartype, color, price, rentprice, deposit, isrenting, description, carimg, 
+    createtime
+   
+        from bus_car
+5177036 DEBUG [2020-05-16 00:09:25]  {conn-10005, pstmt-20007, rs-50042} open
+5177036 DEBUG [2020-05-16 00:09:25]  {conn-10005, pstmt-20007, rs-50042} Header: [carnumber, cartype, color, price, rentprice, deposit, isrenting, description, carimg, createtime]
+5177036 DEBUG [2020-05-16 00:09:25]  {conn-10005, pstmt-20007, rs-50042} Result: [湘B66666, 山地车, 白色, 280000.0, 500.0, 5000.0, 1, 马X1, images/001.png, 2019-05-07 14:52:15.0]
+5177036 DEBUG [2020-05-16 00:09:25]  {conn-10005, pstmt-20007, rs-50042} Result: [湘B77777, 自行车1, 白色, 350000.0, 1500.0, 12000.0, 1, 宝马X3, images/002.png, 2019-05-07 14:52:15.0]
+5177036 DEBUG [2020-05-16 00:09:25]  {conn-10005, pstmt-20007, rs-50042} Result: [湘B88888, 自行车2, 黑色, 880000.0, 1000.0, 10000.0, 0, 保时捷 卡宴, images/003.png, 2019-05-07 14:52:15.0]
+5177037 DEBUG [2020-05-16 00:09:25]  {conn-10005, pstmt-20007, rs-50042} Result: [湘B99999, 自行车3, 黄, 500000.0, 3000.0, 20000.0, 1, 动力强劲, images/defaultcarimage.jpg, 2019-06-10 14:50:12.0]
+5177037 DEBUG [2020-05-16 00:09:25]  {conn-10005, pstmt-20007, rs-50042} closed
+5177037 DEBUG [2020-05-16 00:09:25]  {conn-10005, pstmt-20007} clearParameters. 
+5177037 DEBUG [2020-05-16 00:09:25]  {conn-10005} pool-recycle
+5182048 DEBUG [2020-05-16 00:09:30]  {conn-10005} pool-connect
+5182050 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20008} created. update bus_car
+         SET cartype = ?,
+            
+            
+                color = ?,
+            
+            
+                price = ?,
+            
+            
+                rentprice = ?,
+            
+            
+                deposit = ?,
+            
+            
+                isrenting = ?,
+            
+            
+                description = ?,
+            
+            
+                carimg = ? 
+        where carnumber = ?
+5182051 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20008} Parameters : [山地车, 白色, 280000.0, 500.0, 5000.0, 0, 马X1, images/001.png, 湘B66666]
+5182052 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20008} Types : [VARCHAR, VARCHAR, DOUBLE, DOUBLE, DOUBLE, INTEGER, VARCHAR, VARCHAR, VARCHAR]
+5182112 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20008} executed. 60.7314 millis. update bus_car
+         SET cartype = ?,
+            
+            
+                color = ?,
+            
+            
+                price = ?,
+            
+            
+                rentprice = ?,
+            
+            
+                deposit = ?,
+            
+            
+                isrenting = ?,
+            
+            
+                description = ?,
+            
+            
+                carimg = ? 
+        where carnumber = ?
+5182112 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20008} clearParameters. 
+5182113 DEBUG [2020-05-16 00:09:30]  {conn-10005} pool-recycle
+5182132 DEBUG [2020-05-16 00:09:30]  {conn-10005} pool-connect
+5182133 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20007} Parameters : []
+5182133 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20007} Types : []
+5182133 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20007} executed. 0.4221 millis. select
+         
+    carnumber, cartype, color, price, rentprice, deposit, isrenting, description, carimg, 
+    createtime
+   
+        from bus_car
+5182133 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20007, rs-50043} open
+5182133 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20007, rs-50043} Header: [carnumber, cartype, color, price, rentprice, deposit, isrenting, description, carimg, createtime]
+5182133 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20007, rs-50043} Result: [湘B66666, 山地车, 白色, 280000.0, 500.0, 5000.0, 0, 马X1, images/001.png, 2019-05-07 14:52:15.0]
+5182134 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20007, rs-50043} Result: [湘B77777, 自行车1, 白色, 350000.0, 1500.0, 12000.0, 1, 宝马X3, images/002.png, 2019-05-07 14:52:15.0]
+5182134 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20007, rs-50043} Result: [湘B88888, 自行车2, 黑色, 880000.0, 1000.0, 10000.0, 0, 保时捷 卡宴, images/003.png, 2019-05-07 14:52:15.0]
+5182134 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20007, rs-50043} Result: [湘B99999, 自行车3, 黄, 500000.0, 3000.0, 20000.0, 1, 动力强劲, images/defaultcarimage.jpg, 2019-06-10 14:50:12.0]
+5182134 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20007, rs-50043} closed
+5182134 DEBUG [2020-05-16 00:09:30]  {conn-10005, pstmt-20007} clearParameters. 
+5182134 DEBUG [2020-05-16 00:09:30]  {conn-10005} pool-recycle
+5187554 DEBUG [2020-05-16 00:09:35]  {conn-10005} pool-connect
+5187556 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009} created. select
+         
+    checkid, checkdate, checkdesc, problem, paymoney, opername, rentid, createtime
+   
+        from bus_check
+          
+        order by createtime desc
+5187556 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009} Parameters : []
+5187556 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009} Types : []
+5187558 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009} executed. 1.5395 millis. select
+         
+    checkid, checkdate, checkdesc, problem, paymoney, opername, rentid, createtime
+   
+        from bus_check
+          
+        order by createtime desc
+5187558 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009, rs-50044} open
+5187558 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009, rs-50044} Header: [checkid, checkdate, checkdesc, problem, paymoney, opername, rentid, createtime]
+5187558 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009, rs-50044} Result: [JC_20190727_173816_738_26810, 2019-07-27 17:38:16.0, 无1, 无1, 1.0, 超级管理员, CZ_20190727_152634_863_83662, 2020-07-27 17:38:24.0]
+5187559 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009, rs-50044} Result: [JC_20190611_111021_41215259, 2019-06-11 11:10:21.0, 没有1, 无1, 0.0, 超级管理员, CZ_20190611_094617_32192683, 2020-06-11 11:10:32.0]
+5187559 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009, rs-50044} Result: [JC_20181024_170206_355_7589, 2018-10-24 17:02:06.0, 无, 无, 0.0, 超级管理员, CZ_20181024_102327_735_9111, 2020-05-07 14:55:30.0]
+5187559 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009, rs-50044} Result: [JC_20190322_142814_147_8624, 2019-03-22 14:28:14.0, 222, 11, 100.0, 超级管理员, CZ_20190320_141553_303_8141, 2020-05-07 14:55:30.0]
+5187559 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009, rs-50044} Result: [JC_20181201_105333_218_89516, 2018-12-02 00:00:00.0, 1231321, 111122, 200.0, 超级管理员, CZ_20180612_164808_0385_37625, 2020-05-07 14:55:30.0]
+5187559 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009, rs-50044} Result: [JC_20181201_111951_947_77152, 2018-12-03 00:00:00.0, 无, 无, 0.0, 超级管理员, CZ_20181201_111936_383_31565, 2020-05-07 14:55:30.0]
+5187559 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009, rs-50044} Result: [JC_2018_0901_175053_57325085, 2018-09-01 00:00:00.0, 在G50  1127-1130段超速20%未达50%, 有违章未处理, 500.0, 超级管理员, CZ_2018_0901_175000_97637709, 2020-05-07 14:55:30.0]
+5187560 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009, rs-50044} Result: [JC_20180612_170407_0385_63960, 2018-06-12 00:00:00.0, 在G50高速超速, 超速, 500.0, 习大大, CZ_20180611_171304_0732_57330, 2020-05-07 14:55:30.0]
+5187560 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009, rs-50044} Result: [JC_20180612_172559_0323_71959, 2018-06-13 00:00:00.0, 无, 无, 0.0, 习大大, CZ_20180612_164747_0573_26177, 2020-05-07 14:55:30.0]
+5187560 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009, rs-50044} Result: [JC_20180718_091454_0191_93480, 2018-07-18 00:00:00.0, 无, 无, 0.0, 习大大, CZ_20180718_091206_0365_62161, 2020-05-07 14:55:30.0]
+5187560 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009, rs-50044} closed
+5187560 DEBUG [2020-05-16 00:09:35]  {conn-10005, pstmt-20009} clearParameters. 
+5187560 DEBUG [2020-05-16 00:09:35]  {conn-10005} pool-recycle
+5196748 DEBUG [2020-05-16 00:09:45]  {conn-10005} pool-connect
+5196753 DEBUG [2020-05-16 00:09:45]  {conn-10005, pstmt-20010} created. select address as name,count(1) as value from bus_customer
+		GROUP BY address
+5196753 DEBUG [2020-05-16 00:09:45]  {conn-10005, pstmt-20010} Parameters : []
+5196753 DEBUG [2020-05-16 00:09:45]  {conn-10005, pstmt-20010} Types : []
+5196905 DEBUG [2020-05-16 00:09:45]  {conn-10005, pstmt-20010} executed. 151.7144 millis. select address as name,count(1) as value from bus_customer
+		GROUP BY address
+5196905 DEBUG [2020-05-16 00:09:45]  {conn-10005, pstmt-20010, rs-50045} open
+5196905 DEBUG [2020-05-16 00:09:45]  {conn-10005, pstmt-20010, rs-50045} Header: [address, value]
+5196905 DEBUG [2020-05-16 00:09:45]  {conn-10005, pstmt-20010, rs-50045} Result: [武昌, 3]
+5196908 DEBUG [2020-05-16 00:09:45]  {conn-10005, pstmt-20010, rs-50045} Result: [汉口, 2]
+5196908 DEBUG [2020-05-16 00:09:45]  {conn-10005, pstmt-20010, rs-50045} Result: [汉阳, 1]
+5196908 DEBUG [2020-05-16 00:09:45]  {conn-10005, pstmt-20010, rs-50045} closed
+5196908 DEBUG [2020-05-16 00:09:45]  {conn-10005, pstmt-20010} clearParameters. 
+5196908 DEBUG [2020-05-16 00:09:45]  {conn-10005} pool-recycle
+0    DEBUG [2020-05-17 10:00:41]  {conn-10001} connected
+8    DEBUG [2020-05-17 10:00:41]  {conn-10002} connected
+15   DEBUG [2020-05-17 10:00:41]  {conn-10003} connected
+21   DEBUG [2020-05-17 10:00:41]  {conn-10004} connected
+26   DEBUG [2020-05-17 10:00:41]  {conn-10005} connected
+32   DEBUG [2020-05-17 10:00:41]  {conn-10005} pool-connect
+183  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20000} created. select userid, loginname, identity, realname, sex, address, phone, pwd, position, type,
+        available
+         
+    userid, loginname, identity, realname, sex, address, phone, pwd, position, type, 
+    available
+   
+        from sys_user
+        where loginname=? and pwd=?
+190  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20000} Parameters : [1, e10adc3949ba59abbe56e057f20f883e]
+190  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
+226  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20000} executed. 38.9763 millis. select userid, loginname, identity, realname, sex, address, phone, pwd, position, type,
+        available
+         
+    userid, loginname, identity, realname, sex, address, phone, pwd, position, type, 
+    available
+   
+        from sys_user
+        where loginname=? and pwd=?
+233  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20000, rs-50000} open
+235  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20000, rs-50000} Header: [userid, loginname, identity, realname, sex, address, phone, pwd, position, type, available, loginname, identity, realname, sex, address, phone, pwd, position, type, available]
+255  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20000, rs-50000} Result: [1, 1, 4313341334413, 超级管理员1, 1, 株洲, 134441331311, e10adc3949ba59abbe56e057f20f883e, CEO, 1, 1, 1, 4313341334413, 超级管理员1, 1, 株洲, 134441331311, e10adc3949ba59abbe56e057f20f883e, CEO, 1, 1]
+257  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20000, rs-50000} closed
+257  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20000} clearParameters. 
+259  DEBUG [2020-05-17 10:00:41]  {conn-10005} pool-recycle
+274  DEBUG [2020-05-17 10:00:41]  {conn-10005} pool-connect
+298  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20001} created. insert into sys_log_login (id, loginname, loginip, logintime)
+        values (?, ?, ?,
+        ?)
+302  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20001} Parameters : [null, 1:超级管理员1, 0:0:0:0:0:0:0:1, 2020-05-17 10:00:41.367]
+302  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20001} Types : [INTEGER, VARCHAR, VARCHAR, TIMESTAMP]
+367  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20001} executed. 65.1872 millis. insert into sys_log_login (id, loginname, loginip, logintime)
+        values (?, ?, ?,
+        ?)
+368  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20001, rs-50001} open
+368  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20001, rs-50001} Header: [GENERATED_KEY]
+384  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20001, rs-50001} Result: [322]
+385  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20001, rs-50001} closed
+385  DEBUG [2020-05-17 10:00:41]  {conn-10005, pstmt-20001} clearParameters. 
+385  DEBUG [2020-05-17 10:00:41]  {conn-10005} pool-recycle
+983  DEBUG [2020-05-17 10:00:42]  {conn-10005} pool-connect
+985  DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002} created. select
+         
+    id, pid, title, href, spread, target, icon, available
+   
+        from sys_menu
+         WHERE  available=?
+986  DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002} Parameters : [1]
+986  DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002} Types : [INTEGER]
+1048 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002} executed. 62.454 millis. select
+         
+    id, pid, title, href, spread, target, icon, available
+   
+        from sys_menu
+         WHERE  available=?
+1049 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} open
+1049 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Header: [id, pid, title, href, spread, target, icon, available]
+1049 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [1, 0, 自行车车出租系统, null, 1, null, &#xe68e;, 1]
+1050 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [2, 1, 基础管理, , 1, , &#xe653;, 1]
+1050 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [3, 1, 业务管理, , 1, , &#xe663;, 1]
+1050 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [4, 1, 系统管理, , 0, , &#xe716;, 1]
+1050 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [5, 1, 统计分析, null, 0, null, &#xe629;, 1]
+1051 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [6, 2, 客户管理, ../bus/toCustomerManager, 0, , &#xe770;, 1]
+1051 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [7, 2, 车辆管理, ../bus/toCarManager, 0, , &#xe657;, 1]
+1051 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [8, 3, 汽车出租, ../bus/toRentCarManager, 0, , &#xe65b;, 1]
+1051 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [9, 3, 出租单管理, ../bus/toRentManager, 0, , &#xe6b2;, 1]
+1052 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [10, 3, 自行车入库, ../bus/toCheckCarManager, 0, , &#xe65a;, 1]
+1052 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [11, 3, 检查单管理, ../bus/toCheckManager, 0, , &#xe705;, 1]
+1052 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [12, 4, 菜单管理, ../sys/toMenuManager, 0, null, &#xe60f;, 1]
+1052 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [13, 4, 角色管理, ../sys/toRoleManager, 0, , &#xe66f;, 1]
+1052 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [14, 4, 用户管理, ../sys/toUserManager, 0, , &#xe770;, 1]
+1053 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [15, 4, 日志管理, ../sys/toLogInfoManager, 0, , &#xe655;, 1]
+1053 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [16, 4, 公告管理, ../sys/toNewsManager, 0, , &#xe645;, 1]
+1055 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [17, 4, 数据源监控, ../druid/, 0, , &#xe857;, 1]
+1055 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [18, 5, 客户地区统计, ../stat/toCustomerAreaStat, 0, , &#xe63c;, 1]
+1056 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [19, 5, 公司年度月份销售额, ../stat/toCompanyYearGradeStat, 0, , &#xe62c;, 1]
+1056 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} Result: [20, 5, 业务员年度销售额, ../stat/toOpernameYearGradeStat, 0, , &#xe62d;, 1]
+1056 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002, rs-50002} closed
+1056 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20002} clearParameters. 
+1057 DEBUG [2020-05-17 10:00:42]  {conn-10005} pool-recycle
+1413 DEBUG [2020-05-17 10:00:42]  {conn-10005} pool-connect
+1417 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003} created. select
+         
+    id, title, content, createtime, opername
+   
+        from sys_news
+          
+        order by createtime desc
+1417 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003} Parameters : []
+1417 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003} Types : []
+1506 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003} executed. 88.8433 millis. select
+         
+    id, title, content, createtime, opername
+   
+        from sys_news
+          
+        order by createtime desc
+1506 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} open
+1506 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Header: [id, title, content, createtime, opername]
+1507 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [8, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+1507 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [14, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+1507 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [15, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+1508 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [16, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+1508 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [4, 关于系统V1.5升级公告, <p>关于系统V1.5升级公告</p>, 2020-04-23 16:30:18.0, 习大大]
+1508 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [12, 关于系统V1.5升级公告, <p>关于系统V1.5升级公告</p>, 2020-04-23 16:30:18.0, 习大大]
+1509 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [13, 关于系统V1.5升级公告, <p>关于系统V1.5升级公告</p>, 2020-04-23 16:30:18.0, 习大大]
+1509 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [10, 关于系统V1.3升级公告, <p>12312312312312312312</p>, 2020-04-19 14:10:11.0, 超级管理员]
+1509 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [1, 关于系统V1.0发布公告, <p>关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告			</p>, 2020-04-14 18:05:22.0, 习大大]
+1509 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [5, 关于系统V1.0发布公告, <p>关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告			</p>, 2020-04-14 18:05:22.0, 习大大]
+1509 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [9, 关于系统V1.0发布公告, <p>关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告			</p>, 2020-04-14 18:05:22.0, 习大大]
+1512 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [3, 关于系统V1.4升级公告, <p>312312312</p>, 2020-04-11 11:30:15.0, 超级管理员]
+1513 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [7, 关于系统V1.4升级公告, <p>312312312</p>, 2020-04-11 11:30:15.0, 超级管理员]
+1514 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [11, 关于系统V1.4升级公告, <p>312312312</p>, 2020-04-11 11:30:15.0, 超级管理员]
+1515 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [2, 关于系统V1.3升级公告, <p>12312312312312312312</p>, 2020-03-19 14:10:11.0, 超级管理员]
+1515 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} Result: [6, 关于系统V1.3升级公告, <p>12312312312312312312</p>, 2020-03-19 14:10:11.0, 超级管理员]
+1517 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003, rs-50003} closed
+1517 DEBUG [2020-05-17 10:00:42]  {conn-10005, pstmt-20003} clearParameters. 
+1517 DEBUG [2020-05-17 10:00:42]  {conn-10005} pool-recycle
+20648624 DEBUG [2020-05-17 15:44:49]  {conn-10005} pool-connect
+20648634 DEBUG [2020-05-17 15:44:49]  {conn-10005, pstmt-20004} created. select
+         
+    id, title, content, createtime, opername
+   
+        from sys_news
+        where id = ?
+20648636 DEBUG [2020-05-17 15:44:49]  {conn-10005, pstmt-20004} Parameters : [16]
+20648636 DEBUG [2020-05-17 15:44:49]  {conn-10005, pstmt-20004} Types : [INTEGER]
+20648638 DEBUG [2020-05-17 15:44:49]  {conn-10005, pstmt-20004} executed. 2.7829 millis. select
+         
+    id, title, content, createtime, opername
+   
+        from sys_news
+        where id = ?
+20648639 DEBUG [2020-05-17 15:44:49]  {conn-10005, pstmt-20004, rs-50004} open
+20648639 DEBUG [2020-05-17 15:44:49]  {conn-10005, pstmt-20004, rs-50004} Header: [id, title, content, createtime, opername]
+20648640 DEBUG [2020-05-17 15:44:49]  {conn-10005, pstmt-20004, rs-50004} Result: [16, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+20648642 DEBUG [2020-05-17 15:44:49]  {conn-10005, pstmt-20004, rs-50004} closed
+20648642 DEBUG [2020-05-17 15:44:49]  {conn-10005, pstmt-20004} clearParameters. 
+20648643 DEBUG [2020-05-17 15:44:49]  {conn-10005} pool-recycle
+20654523 DEBUG [2020-05-17 15:44:55]  {conn-10005} pool-connect
+20654523 DEBUG [2020-05-17 15:44:55]  {conn-10005, pstmt-20004} Parameters : [1]
+20654523 DEBUG [2020-05-17 15:44:55]  {conn-10005, pstmt-20004} Types : [INTEGER]
+20654524 DEBUG [2020-05-17 15:44:55]  {conn-10005, pstmt-20004} executed. 0.6776 millis. select
+         
+    id, title, content, createtime, opername
+   
+        from sys_news
+        where id = ?
+20654524 DEBUG [2020-05-17 15:44:55]  {conn-10005, pstmt-20004, rs-50005} open
+20654524 DEBUG [2020-05-17 15:44:55]  {conn-10005, pstmt-20004, rs-50005} Header: [id, title, content, createtime, opername]
+20654524 DEBUG [2020-05-17 15:44:55]  {conn-10005, pstmt-20004, rs-50005} Result: [1, 关于系统V1.0发布公告, <p>关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告			</p>, 2020-04-14 18:05:22.0, 习大大]
+20654525 DEBUG [2020-05-17 15:44:55]  {conn-10005, pstmt-20004, rs-50005} closed
+20654525 DEBUG [2020-05-17 15:44:55]  {conn-10005, pstmt-20004} clearParameters. 
+20654525 DEBUG [2020-05-17 15:44:55]  {conn-10005} pool-recycle
+20666009 DEBUG [2020-05-17 15:45:07]  {conn-10005} pool-connect
+20666010 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002} Parameters : [1]
+20666010 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002} Types : [INTEGER]
+20666011 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002} executed. 1.1682 millis. select
+         
+    id, pid, title, href, spread, target, icon, available
+   
+        from sys_menu
+         WHERE  available=?
+20666011 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} open
+20666011 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Header: [id, pid, title, href, spread, target, icon, available]
+20666011 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [1, 0, 自行车车出租系统, null, 1, null, &#xe68e;, 1]
+20666012 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [2, 1, 基础管理, , 1, , &#xe653;, 1]
+20666012 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [3, 1, 业务管理, , 1, , &#xe663;, 1]
+20666012 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [4, 1, 系统管理, , 0, , &#xe716;, 1]
+20666012 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [5, 1, 统计分析, null, 0, null, &#xe629;, 1]
+20666012 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [6, 2, 客户管理, ../bus/toCustomerManager, 0, , &#xe770;, 1]
+20666012 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [7, 2, 车辆管理, ../bus/toCarManager, 0, , &#xe657;, 1]
+20666013 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [8, 3, 汽车出租, ../bus/toRentCarManager, 0, , &#xe65b;, 1]
+20666013 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [9, 3, 出租单管理, ../bus/toRentManager, 0, , &#xe6b2;, 1]
+20666013 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [10, 3, 自行车入库, ../bus/toCheckCarManager, 0, , &#xe65a;, 1]
+20666014 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [11, 3, 检查单管理, ../bus/toCheckManager, 0, , &#xe705;, 1]
+20666014 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [12, 4, 菜单管理, ../sys/toMenuManager, 0, null, &#xe60f;, 1]
+20666014 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [13, 4, 角色管理, ../sys/toRoleManager, 0, , &#xe66f;, 1]
+20666014 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [14, 4, 用户管理, ../sys/toUserManager, 0, , &#xe770;, 1]
+20666014 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [15, 4, 日志管理, ../sys/toLogInfoManager, 0, , &#xe655;, 1]
+20666014 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [16, 4, 公告管理, ../sys/toNewsManager, 0, , &#xe645;, 1]
+20666015 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [17, 4, 数据源监控, ../druid/, 0, , &#xe857;, 1]
+20666015 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [18, 5, 客户地区统计, ../stat/toCustomerAreaStat, 0, , &#xe63c;, 1]
+20666015 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [19, 5, 公司年度月份销售额, ../stat/toCompanyYearGradeStat, 0, , &#xe62c;, 1]
+20666015 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} Result: [20, 5, 业务员年度销售额, ../stat/toOpernameYearGradeStat, 0, , &#xe62d;, 1]
+20666015 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50006} closed
+20666016 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002} clearParameters. 
+20666016 DEBUG [2020-05-17 15:45:07]  {conn-10005} pool-recycle
+20666311 DEBUG [2020-05-17 15:45:07]  {conn-10005} pool-connect
+20666312 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005} created. select
+         
+    id, pid, title, href, spread, target, icon, available
+   
+        from sys_menu
+20666313 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005} Parameters : []
+20666313 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005} Types : []
+20666314 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005} executed. 1.0139 millis. select
+         
+    id, pid, title, href, spread, target, icon, available
+   
+        from sys_menu
+20666314 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} open
+20666314 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Header: [id, pid, title, href, spread, target, icon, available]
+20666314 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [1, 0, 自行车车出租系统, null, 1, null, &#xe68e;, 1]
+20666315 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [2, 1, 基础管理, , 1, , &#xe653;, 1]
+20666315 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [3, 1, 业务管理, , 1, , &#xe663;, 1]
+20666315 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [4, 1, 系统管理, , 0, , &#xe716;, 1]
+20666316 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [5, 1, 统计分析, null, 0, null, &#xe629;, 1]
+20666316 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [6, 2, 客户管理, ../bus/toCustomerManager, 0, , &#xe770;, 1]
+20666316 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [7, 2, 车辆管理, ../bus/toCarManager, 0, , &#xe657;, 1]
+20666316 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [8, 3, 汽车出租, ../bus/toRentCarManager, 0, , &#xe65b;, 1]
+20666316 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [9, 3, 出租单管理, ../bus/toRentManager, 0, , &#xe6b2;, 1]
+20666317 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [10, 3, 自行车入库, ../bus/toCheckCarManager, 0, , &#xe65a;, 1]
+20666318 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [11, 3, 检查单管理, ../bus/toCheckManager, 0, , &#xe705;, 1]
+20666318 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [12, 4, 菜单管理, ../sys/toMenuManager, 0, null, &#xe60f;, 1]
+20666318 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [13, 4, 角色管理, ../sys/toRoleManager, 0, , &#xe66f;, 1]
+20666318 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [14, 4, 用户管理, ../sys/toUserManager, 0, , &#xe770;, 1]
+20666319 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [15, 4, 日志管理, ../sys/toLogInfoManager, 0, , &#xe655;, 1]
+20666319 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [16, 4, 公告管理, ../sys/toNewsManager, 0, , &#xe645;, 1]
+20666319 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [17, 4, 数据源监控, ../druid/, 0, , &#xe857;, 1]
+20666319 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [18, 5, 客户地区统计, ../stat/toCustomerAreaStat, 0, , &#xe63c;, 1]
+20666319 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [19, 5, 公司年度月份销售额, ../stat/toCompanyYearGradeStat, 0, , &#xe62c;, 1]
+20666320 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} Result: [20, 5, 业务员年度销售额, ../stat/toOpernameYearGradeStat, 0, , &#xe62d;, 1]
+20666320 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005, rs-50007} closed
+20666320 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20005} clearParameters. 
+20666320 DEBUG [2020-05-17 15:45:07]  {conn-10005} pool-recycle
+20666336 DEBUG [2020-05-17 15:45:07]  {conn-10005} pool-connect
+20666336 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002} Parameters : [1]
+20666336 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002} Types : [INTEGER]
+20666336 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002} executed. 0.4964 millis. select
+         
+    id, pid, title, href, spread, target, icon, available
+   
+        from sys_menu
+         WHERE  available=?
+20666337 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} open
+20666337 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Header: [id, pid, title, href, spread, target, icon, available]
+20666337 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [1, 0, 自行车车出租系统, null, 1, null, &#xe68e;, 1]
+20666337 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [2, 1, 基础管理, , 1, , &#xe653;, 1]
+20666337 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [3, 1, 业务管理, , 1, , &#xe663;, 1]
+20666337 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [4, 1, 系统管理, , 0, , &#xe716;, 1]
+20666337 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [5, 1, 统计分析, null, 0, null, &#xe629;, 1]
+20666337 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [6, 2, 客户管理, ../bus/toCustomerManager, 0, , &#xe770;, 1]
+20666337 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [7, 2, 车辆管理, ../bus/toCarManager, 0, , &#xe657;, 1]
+20666338 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [8, 3, 汽车出租, ../bus/toRentCarManager, 0, , &#xe65b;, 1]
+20666338 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [9, 3, 出租单管理, ../bus/toRentManager, 0, , &#xe6b2;, 1]
+20666339 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [10, 3, 自行车入库, ../bus/toCheckCarManager, 0, , &#xe65a;, 1]
+20666339 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [11, 3, 检查单管理, ../bus/toCheckManager, 0, , &#xe705;, 1]
+20666339 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [12, 4, 菜单管理, ../sys/toMenuManager, 0, null, &#xe60f;, 1]
+20666339 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [13, 4, 角色管理, ../sys/toRoleManager, 0, , &#xe66f;, 1]
+20666340 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [14, 4, 用户管理, ../sys/toUserManager, 0, , &#xe770;, 1]
+20666340 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [15, 4, 日志管理, ../sys/toLogInfoManager, 0, , &#xe655;, 1]
+20666340 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [16, 4, 公告管理, ../sys/toNewsManager, 0, , &#xe645;, 1]
+20666340 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [17, 4, 数据源监控, ../druid/, 0, , &#xe857;, 1]
+20666340 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [18, 5, 客户地区统计, ../stat/toCustomerAreaStat, 0, , &#xe63c;, 1]
+20666340 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [19, 5, 公司年度月份销售额, ../stat/toCompanyYearGradeStat, 0, , &#xe62c;, 1]
+20666340 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} Result: [20, 5, 业务员年度销售额, ../stat/toOpernameYearGradeStat, 0, , &#xe62d;, 1]
+20666341 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002, rs-50008} closed
+20666341 DEBUG [2020-05-17 15:45:07]  {conn-10005, pstmt-20002} clearParameters. 
+20666341 DEBUG [2020-05-17 15:45:07]  {conn-10005} pool-recycle
+21105099 DEBUG [2020-05-17 15:52:26]  {conn-10005} pool-connect
+21105104 DEBUG [2020-05-17 15:52:26]  {conn-10005, pstmt-20006} created. select address as name,count(1) as value from bus_customer
+		GROUP BY address
+21105104 DEBUG [2020-05-17 15:52:26]  {conn-10005, pstmt-20006} Parameters : []
+21105104 DEBUG [2020-05-17 15:52:26]  {conn-10005, pstmt-20006} Types : []
+21105202 DEBUG [2020-05-17 15:52:26]  {conn-10005, pstmt-20006} executed. 97.7128 millis. select address as name,count(1) as value from bus_customer
+		GROUP BY address
+21105203 DEBUG [2020-05-17 15:52:26]  {conn-10005, pstmt-20006, rs-50009} open
+21105203 DEBUG [2020-05-17 15:52:26]  {conn-10005, pstmt-20006, rs-50009} Header: [address, value]
+21105203 DEBUG [2020-05-17 15:52:26]  {conn-10005, pstmt-20006, rs-50009} Result: [武昌, 3]
+21105205 DEBUG [2020-05-17 15:52:26]  {conn-10005, pstmt-20006, rs-50009} Result: [汉口, 2]
+21105205 DEBUG [2020-05-17 15:52:26]  {conn-10005, pstmt-20006, rs-50009} Result: [汉阳, 1]
+21105205 DEBUG [2020-05-17 15:52:26]  {conn-10005, pstmt-20006, rs-50009} closed
+21105205 DEBUG [2020-05-17 15:52:26]  {conn-10005, pstmt-20006} clearParameters. 
+21105205 DEBUG [2020-05-17 15:52:26]  {conn-10005} pool-recycle
+21136502 DEBUG [2020-05-17 15:52:57]  {conn-10005} pool-connect
+21136502 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007} created. select
+         
+    identity, custname, sex, address, phone, career, createtime
+   
+        from bus_customer
+          
+        order by createtime
+21136503 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007} Parameters : []
+21136503 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007} Types : []
+21136504 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007} executed. 1.0504 millis. select
+         
+    identity, custname, sex, address, phone, career, createtime
+   
+        from bus_customer
+          
+        order by createtime
+21136504 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007, rs-50010} open
+21136504 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007, rs-50010} Header: [identity, custname, sex, address, phone, career, createtime]
+21136504 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007, rs-50010} Result: [43131334113331131, 邹向前, 0, 武昌, 13888888888, 国家最高领导人, 2020-04-07 14:52:24.0]
+21136505 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007, rs-50010} Result: [421087133414144412, 邹向前, 1, 武昌, 13456788987, 程序员, 2020-04-07 14:52:24.0]
+21136505 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007, rs-50010} Result: [431321199291331131, 张三, 1, 武昌, 13431334113, 程序员, 2020-04-07 14:52:24.0]
+21136505 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007, rs-50010} Result: [431321199291331132, 孙中, 1, 汉口, 134131314131, 总统, 2020-04-07 14:52:24.0]
+21136505 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007, rs-50010} Result: [431341134191311311, 李四, 0, 汉阳, 13451313113, CEO1, 2020-04-17 14:52:24.0]
+21136506 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007, rs-50010} Result: [431341134191311314, 王明, 1, 汉口, 13413131113, CEO2, 2020-05-07 14:52:24.0]
+21136506 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007, rs-50010} closed
+21136506 DEBUG [2020-05-17 15:52:57]  {conn-10005, pstmt-20007} clearParameters. 
+21136506 DEBUG [2020-05-17 15:52:57]  {conn-10005} pool-recycle
+21138888 DEBUG [2020-05-17 15:52:59]  {conn-10005} pool-connect
+21138889 DEBUG [2020-05-17 15:52:59]  {conn-10005, pstmt-20008} created. select
+         
+    carnumber, cartype, color, price, rentprice, deposit, isrenting, description, carimg, 
+    createtime
+   
+        from bus_car
+21138889 DEBUG [2020-05-17 15:52:59]  {conn-10005, pstmt-20008} Parameters : []
+21138889 DEBUG [2020-05-17 15:52:59]  {conn-10005, pstmt-20008} Types : []
+21138920 DEBUG [2020-05-17 15:53:00]  {conn-10005, pstmt-20008} executed. 31.5983 millis. select
+         
+    carnumber, cartype, color, price, rentprice, deposit, isrenting, description, carimg, 
+    createtime
+   
+        from bus_car
+21138921 DEBUG [2020-05-17 15:53:00]  {conn-10005, pstmt-20008, rs-50011} open
+21138921 DEBUG [2020-05-17 15:53:00]  {conn-10005, pstmt-20008, rs-50011} Header: [carnumber, cartype, color, price, rentprice, deposit, isrenting, description, carimg, createtime]
+21138921 DEBUG [2020-05-17 15:53:00]  {conn-10005, pstmt-20008, rs-50011} Result: [湘B66666, 山地车, 白色, 280000.0, 500.0, 5000.0, 0, 马X1, images/001.png, 2019-05-07 14:52:15.0]
+21138921 DEBUG [2020-05-17 15:53:00]  {conn-10005, pstmt-20008, rs-50011} Result: [湘B77777, 自行车1, 白色, 350000.0, 1500.0, 12000.0, 1, 宝马X3, images/002.png, 2019-05-07 14:52:15.0]
+21138922 DEBUG [2020-05-17 15:53:00]  {conn-10005, pstmt-20008, rs-50011} Result: [湘B88888, 自行车2, 黑色, 880000.0, 1000.0, 10000.0, 0, 保时捷 卡宴, images/003.png, 2019-05-07 14:52:15.0]
+21138922 DEBUG [2020-05-17 15:53:00]  {conn-10005, pstmt-20008, rs-50011} Result: [湘B99999, 自行车3, 黄, 500000.0, 3000.0, 20000.0, 1, 动力强劲, images/defaultcarimage.jpg, 2019-06-10 14:50:12.0]
+21138922 DEBUG [2020-05-17 15:53:00]  {conn-10005, pstmt-20008, rs-50011} closed
+21138922 DEBUG [2020-05-17 15:53:00]  {conn-10005, pstmt-20008} clearParameters. 
+21138922 DEBUG [2020-05-17 15:53:00]  {conn-10005} pool-recycle
+25200384 DEBUG [2020-05-17 17:00:41]  {conn-10001} closed
+25200387 DEBUG [2020-05-17 17:00:41]  {conn-10002} closed
+25200387 DEBUG [2020-05-17 17:00:41]  {conn-10003} closed
+25200388 DEBUG [2020-05-17 17:00:41]  {conn-10004} closed
+1    DEBUG [2020-06-10 11:35:37]  {conn-10001} connected
+13   DEBUG [2020-06-10 11:35:37]  {conn-10002} connected
+18   DEBUG [2020-06-10 11:35:37]  {conn-10003} connected
+24   DEBUG [2020-06-10 11:35:37]  {conn-10004} connected
+30   DEBUG [2020-06-10 11:35:37]  {conn-10005} connected
+33   DEBUG [2020-06-10 11:35:37]  {conn-10005} pool-connect
+277  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20000} created. select userid, loginname, identity, realname, sex, address, phone, pwd, position, type,
+        available
+         
+    userid, loginname, identity, realname, sex, address, phone, pwd, position, type, 
+    available
+   
+        from sys_user
+        where loginname=? and pwd=?
+285  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20000} Parameters : [2, e10adc3949ba59abbe56e057f20f883e]
+285  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
+384  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20000} executed. 102.2981 millis. select userid, loginname, identity, realname, sex, address, phone, pwd, position, type,
+        available
+         
+    userid, loginname, identity, realname, sex, address, phone, pwd, position, type, 
+    available
+   
+        from sys_user
+        where loginname=? and pwd=?
+391  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20000, rs-50000} open
+395  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20000, rs-50000} Header: [userid, loginname, identity, realname, sex, address, phone, pwd, position, type, available, loginname, identity, realname, sex, address, phone, pwd, position, type, available]
+423  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20000, rs-50000} Result: [2, 2, 4313341334413, 超级管理员2, 2, 宿舍, 134441331311, e10adc3949ba59abbe56e057f20f883e, CEO, 2, 1, 2, 4313341334413, 超级管理员2, 2, 宿舍, 134441331311, e10adc3949ba59abbe56e057f20f883e, CEO, 2, 1]
+425  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20000, rs-50000} closed
+426  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20000} clearParameters. 
+429  DEBUG [2020-06-10 11:35:38]  {conn-10005} pool-recycle
+442  DEBUG [2020-06-10 11:35:38]  {conn-10005} pool-connect
+463  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20001} created. insert into sys_log_login (id, loginname, loginip, logintime)
+        values (?, ?, ?,
+        ?)
+466  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20001} Parameters : [null, 2:超级管理员2, 192.168.56.1, 2020-06-10 11:35:38.36]
+466  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20001} Types : [INTEGER, VARCHAR, VARCHAR, TIMESTAMP]
+592  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20001} executed. 126.2254 millis. insert into sys_log_login (id, loginname, loginip, logintime)
+        values (?, ?, ?,
+        ?)
+594  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20001, rs-50001} open
+594  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20001, rs-50001} Header: [GENERATED_KEY]
+619  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20001, rs-50001} Result: [323]
+620  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20001, rs-50001} closed
+620  DEBUG [2020-06-10 11:35:38]  {conn-10005, pstmt-20001} clearParameters. 
+621  DEBUG [2020-06-10 11:35:38]  {conn-10005} pool-recycle
+1390 DEBUG [2020-06-10 11:35:39]  {conn-10005} pool-connect
+1396 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002} created. select
+         
+    id, title, content, createtime, opername
+   
+        from sys_news
+          
+        order by createtime desc
+1396 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002} Parameters : []
+1396 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002} Types : []
+1488 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002} executed. 92.9129 millis. select
+         
+    id, title, content, createtime, opername
+   
+        from sys_news
+          
+        order by createtime desc
+1489 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} open
+1490 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Header: [id, title, content, createtime, opername]
+1491 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [8, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+1492 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [14, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+1494 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [15, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+1495 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [16, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+1496 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [4, 关于系统V1.5升级公告, <p>关于系统V1.5升级公告</p>, 2020-04-23 16:30:18.0, 习大大]
+1497 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [12, 关于系统V1.5升级公告, <p>关于系统V1.5升级公告</p>, 2020-04-23 16:30:18.0, 习大大]
+1498 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [13, 关于系统V1.5升级公告, <p>关于系统V1.5升级公告</p>, 2020-04-23 16:30:18.0, 习大大]
+1498 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [10, 关于系统V1.3升级公告, <p>12312312312312312312</p>, 2020-04-19 14:10:11.0, 超级管理员]
+1499 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [1, 关于系统V1.0发布公告, <p>关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告			</p>, 2020-04-14 18:05:22.0, 习大大]
+1499 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [5, 关于系统V1.0发布公告, <p>关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告			</p>, 2020-04-14 18:05:22.0, 习大大]
+1500 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [9, 关于系统V1.0发布公告, <p>关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告			</p>, 2020-04-14 18:05:22.0, 习大大]
+1501 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [3, 关于系统V1.4升级公告, <p>312312312</p>, 2020-04-11 11:30:15.0, 超级管理员]
+1501 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [7, 关于系统V1.4升级公告, <p>312312312</p>, 2020-04-11 11:30:15.0, 超级管理员]
+1502 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [11, 关于系统V1.4升级公告, <p>312312312</p>, 2020-04-11 11:30:15.0, 超级管理员]
+1502 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [2, 关于系统V1.3升级公告, <p>12312312312312312312</p>, 2020-03-19 14:10:11.0, 超级管理员]
+1503 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} Result: [6, 关于系统V1.3升级公告, <p>12312312312312312312</p>, 2020-03-19 14:10:11.0, 超级管理员]
+1506 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002, rs-50002} closed
+1507 DEBUG [2020-06-10 11:35:39]  {conn-10005, pstmt-20002} clearParameters. 
+1507 DEBUG [2020-06-10 11:35:39]  {conn-10005} pool-recycle
+22501 DEBUG [2020-06-10 11:36:00]  {conn-10005} pool-connect
+22501 DEBUG [2020-06-10 11:36:00]  {conn-10005, pstmt-20000} Parameters : [admin, 21232f297a57a5a743894a0e4a801fc3]
+22501 DEBUG [2020-06-10 11:36:00]  {conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
+22502 DEBUG [2020-06-10 11:36:00]  {conn-10005, pstmt-20000} executed. 0.7844 millis. select userid, loginname, identity, realname, sex, address, phone, pwd, position, type,
+        available
+         
+    userid, loginname, identity, realname, sex, address, phone, pwd, position, type, 
+    available
+   
+        from sys_user
+        where loginname=? and pwd=?
+22502 DEBUG [2020-06-10 11:36:00]  {conn-10005, pstmt-20000, rs-50003} open
+22502 DEBUG [2020-06-10 11:36:00]  {conn-10005, pstmt-20000, rs-50003} Header: [userid, loginname, identity, realname, sex, address, phone, pwd, position, type, available, loginname, identity, realname, sex, address, phone, pwd, position, type, available]
+22503 DEBUG [2020-06-10 11:36:00]  {conn-10005, pstmt-20000, rs-50003} closed
+22503 DEBUG [2020-06-10 11:36:00]  {conn-10005, pstmt-20000} clearParameters. 
+22503 DEBUG [2020-06-10 11:36:00]  {conn-10005} pool-recycle
+37577 DEBUG [2020-06-10 11:36:15]  {conn-10005} pool-connect
+37577 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20000} Parameters : [1, e10adc3949ba59abbe56e057f20f883e]
+37577 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
+37578 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20000} executed. 0.9224 millis. select userid, loginname, identity, realname, sex, address, phone, pwd, position, type,
+        available
+         
+    userid, loginname, identity, realname, sex, address, phone, pwd, position, type, 
+    available
+   
+        from sys_user
+        where loginname=? and pwd=?
+37578 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20000, rs-50004} open
+37578 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20000, rs-50004} Header: [userid, loginname, identity, realname, sex, address, phone, pwd, position, type, available, loginname, identity, realname, sex, address, phone, pwd, position, type, available]
+37579 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20000, rs-50004} Result: [1, 1, 4313341334413, 超级管理员1, 1, 株洲, 134441331311, e10adc3949ba59abbe56e057f20f883e, CEO, 1, 1, 1, 4313341334413, 超级管理员1, 1, 株洲, 134441331311, e10adc3949ba59abbe56e057f20f883e, CEO, 1, 1]
+37579 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20000, rs-50004} closed
+37579 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20000} clearParameters. 
+37580 DEBUG [2020-06-10 11:36:15]  {conn-10005} pool-recycle
+37582 DEBUG [2020-06-10 11:36:15]  {conn-10005} pool-connect
+37582 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20001} Parameters : [null, 1:超级管理员1, 192.168.56.1, 2020-06-10 11:36:15.501]
+37582 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20001} Types : [INTEGER, VARCHAR, VARCHAR, TIMESTAMP]
+37703 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20001} executed. 120.8264 millis. insert into sys_log_login (id, loginname, loginip, logintime)
+        values (?, ?, ?,
+        ?)
+37704 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20001, rs-50005} open
+37704 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20001, rs-50005} Header: [GENERATED_KEY]
+37704 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20001, rs-50005} Result: [324]
+37705 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20001, rs-50005} closed
+37705 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20001} clearParameters. 
+37705 DEBUG [2020-06-10 11:36:15]  {conn-10005} pool-recycle
+37944 DEBUG [2020-06-10 11:36:15]  {conn-10005} pool-connect
+37944 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002} Parameters : []
+37944 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002} Types : []
+37962 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002} executed. 17.3988 millis. select
+         
+    id, title, content, createtime, opername
+   
+        from sys_news
+          
+        order by createtime desc
+37962 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} open
+37962 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Header: [id, title, content, createtime, opername]
+37962 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [8, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+37963 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [14, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+37963 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [15, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+37964 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [16, 关于车牌号A11111未正常入库相关人员的处理意见, <p>关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见关于车牌号A11111未正常入库相关人员的处理意见</p>, 2020-04-27 11:21:49.0, 超级管理员]
+37964 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [4, 关于系统V1.5升级公告, <p>关于系统V1.5升级公告</p>, 2020-04-23 16:30:18.0, 习大大]
+37964 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [12, 关于系统V1.5升级公告, <p>关于系统V1.5升级公告</p>, 2020-04-23 16:30:18.0, 习大大]
+37964 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [13, 关于系统V1.5升级公告, <p>关于系统V1.5升级公告</p>, 2020-04-23 16:30:18.0, 习大大]
+37965 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [10, 关于系统V1.3升级公告, <p>12312312312312312312</p>, 2020-04-19 14:10:11.0, 超级管理员]
+37965 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [1, 关于系统V1.0发布公告, <p>关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告			</p>, 2020-04-14 18:05:22.0, 习大大]
+37965 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [5, 关于系统V1.0发布公告, <p>关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告			</p>, 2020-04-14 18:05:22.0, 习大大]
+37966 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [9, 关于系统V1.0发布公告, <p>关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告关于系统V1.5升级公告			</p>, 2020-04-14 18:05:22.0, 习大大]
+37967 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [3, 关于系统V1.4升级公告, <p>312312312</p>, 2020-04-11 11:30:15.0, 超级管理员]
+37967 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [7, 关于系统V1.4升级公告, <p>312312312</p>, 2020-04-11 11:30:15.0, 超级管理员]
+37968 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [11, 关于系统V1.4升级公告, <p>312312312</p>, 2020-04-11 11:30:15.0, 超级管理员]
+37969 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [2, 关于系统V1.3升级公告, <p>12312312312312312312</p>, 2020-03-19 14:10:11.0, 超级管理员]
+37970 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} Result: [6, 关于系统V1.3升级公告, <p>12312312312312312312</p>, 2020-03-19 14:10:11.0, 超级管理员]
+37970 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002, rs-50006} closed
+37971 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20002} clearParameters. 
+37971 DEBUG [2020-06-10 11:36:15]  {conn-10005} pool-recycle
+37983 DEBUG [2020-06-10 11:36:15]  {conn-10005} pool-connect
+37984 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003} created. select
+         
+    id, pid, title, href, spread, target, icon, available
+   
+        from sys_menu
+         WHERE  available=?
+37986 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003} Parameters : [1]
+37986 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003} Types : [INTEGER]
+38075 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003} executed. 88.5397 millis. select
+         
+    id, pid, title, href, spread, target, icon, available
+   
+        from sys_menu
+         WHERE  available=?
+38075 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003, rs-50007} open
+38075 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003, rs-50007} Header: [id, pid, title, href, spread, target, icon, available]
+38076 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003, rs-50007} Result: [1, 0, 自行车车出租系统, null, 1, null, &#xe68e;, 1]
+38076 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003, rs-50007} Result: [2, 1, 基础管理, , 1, , &#xe653;, 1]
+38077 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003, rs-50007} Result: [3, 1, 业务管理, , 1, , &#xe663;, 1]
+38077 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003, rs-50007} Result: [4, 1, 系统管理, , 0, , &#xe716;, 1]
+38078 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003, rs-50007} Result: [5, 1, 统计分析, null, 0, null, &#xe629;, 1]
+38078 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003, rs-50007} Result: [6, 2, 客户管理, ../bus/toCustomerManager, 0, , &#xe770;, 1]
+38079 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003, rs-50007} Result: [7, 2, 车辆管理, ../bus/toCarManager, 0, , &#xe657;, 1]
+38079 DEBUG [2020-06-10 11:36:15]  {conn-10005, pstmt-20003, rs-50007} Result: [8, 3, 汽车出租, ../bus/toRentCarManager, 0, , &#xe65b;, 1]
+38080 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003, rs-50007} Result: [9, 3, 出租单管理, ../bus/toRentManager, 0, , &#xe6b2;, 1]
+38080 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003, rs-50007} Result: [10, 3, 自行车入库, ../bus/toCheckCarManager, 0, , &#xe65a;, 1]
+38081 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003, rs-50007} Result: [11, 3, 检查单管理, ../bus/toCheckManager, 0, , &#xe705;, 1]
+38081 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003, rs-50007} Result: [12, 4, 菜单管理, ../sys/toMenuManager, 0, null, &#xe60f;, 1]
+38081 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003, rs-50007} Result: [13, 4, 角色管理, ../sys/toRoleManager, 0, , &#xe66f;, 1]
+38082 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003, rs-50007} Result: [14, 4, 用户管理, ../sys/toUserManager, 0, , &#xe770;, 1]
+38083 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003, rs-50007} Result: [15, 4, 日志管理, ../sys/toLogInfoManager, 0, , &#xe655;, 1]
+38084 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003, rs-50007} Result: [16, 4, 公告管理, ../sys/toNewsManager, 0, , &#xe645;, 1]
+38089 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003, rs-50007} Result: [17, 4, 数据源监控, ../druid/, 0, , &#xe857;, 1]
+38090 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003, rs-50007} Result: [18, 5, 客户地区统计, ../stat/toCustomerAreaStat, 0, , &#xe63c;, 1]
+38090 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003, rs-50007} Result: [19, 5, 公司年度月份销售额, ../stat/toCompanyYearGradeStat, 0, , &#xe62c;, 1]
+38091 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003, rs-50007} Result: [20, 5, 业务员年度销售额, ../stat/toOpernameYearGradeStat, 0, , &#xe62d;, 1]
+38092 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003, rs-50007} closed
+38092 DEBUG [2020-06-10 11:36:16]  {conn-10005, pstmt-20003} clearParameters. 
+38093 DEBUG [2020-06-10 11:36:16]  {conn-10005} pool-recycle
+43560 DEBUG [2020-06-10 11:36:21]  {conn-10005} pool-connect
+43563 DEBUG [2020-06-10 11:36:21]  {conn-10005, pstmt-20004} created. select address as name,count(1) as value from bus_customer
+		GROUP BY address
+43563 DEBUG [2020-06-10 11:36:21]  {conn-10005, pstmt-20004} Parameters : []
+43563 DEBUG [2020-06-10 11:36:21]  {conn-10005, pstmt-20004} Types : []
+43707 DEBUG [2020-06-10 11:36:21]  {conn-10005, pstmt-20004} executed. 143.791 millis. select address as name,count(1) as value from bus_customer
+		GROUP BY address
+43707 DEBUG [2020-06-10 11:36:21]  {conn-10005, pstmt-20004, rs-50008} open
+43707 DEBUG [2020-06-10 11:36:21]  {conn-10005, pstmt-20004, rs-50008} Header: [address, value]
+43708 DEBUG [2020-06-10 11:36:21]  {conn-10005, pstmt-20004, rs-50008} Result: [武昌, 3]
+43709 DEBUG [2020-06-10 11:36:21]  {conn-10005, pstmt-20004, rs-50008} Result: [汉口, 2]
+43709 DEBUG [2020-06-10 11:36:21]  {conn-10005, pstmt-20004, rs-50008} Result: [汉阳, 1]
+43709 DEBUG [2020-06-10 11:36:21]  {conn-10005, pstmt-20004, rs-50008} closed
+43709 DEBUG [2020-06-10 11:36:21]  {conn-10005, pstmt-20004} clearParameters. 
+43709 DEBUG [2020-06-10 11:36:21]  {conn-10005} pool-recycle
+46020 DEBUG [2020-06-10 11:36:23]  {conn-10005} pool-connect
+46056 DEBUG [2020-06-10 11:36:23]  {conn-10005, pstmt-20005} created. select sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'01')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'02')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'03')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'04')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'05')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'06')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'07')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'08')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'09')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'10')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'11')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'12')
+46058 DEBUG [2020-06-10 11:36:23]  {conn-10005, pstmt-20005} Parameters : [2020, 2020, 2020, 2020, 2020, 2020, 2020, 2020, 2020, 2020, 2020, 2020]
+46058 DEBUG [2020-06-10 11:36:23]  {conn-10005, pstmt-20005} Types : [VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
+46133 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005} executed. 75.5648 millis. select sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'01')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'02')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'03')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'04')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'05')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'06')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'07')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'08')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'09')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'10')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'11')
+		UNION all
+		select
+		sum(price) from bus_rent where
+		DATE_FORMAT(createtime,"%Y%m")=concat(?,'12')
+46133 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} open
+46133 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} Header: [sum(price)]
+46133 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} Result: [null]
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} Result: [null]
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} Result: [1500.0]
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} Result: [null]
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} Result: [null]
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} Result: [null]
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} Result: [null]
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} Result: [null]
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} Result: [null]
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} Result: [null]
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} Result: [null]
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} Result: [null]
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005, rs-50009} closed
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005, pstmt-20005} clearParameters. 
+46135 DEBUG [2020-06-10 11:36:24]  {conn-10005} pool-recycle
+48022 DEBUG [2020-06-10 11:36:25]  {conn-10005} pool-connect
+48023 DEBUG [2020-06-10 11:36:25]  {conn-10005, pstmt-20006} created. select opername as name,sum(price) as value from bus_rent
+		where
+		DATE_FORMAT(createtime,"%Y")=? GROUP BY opername
+48023 DEBUG [2020-06-10 11:36:25]  {conn-10005, pstmt-20006} Parameters : [2020]
+48023 DEBUG [2020-06-10 11:36:25]  {conn-10005, pstmt-20006} Types : [VARCHAR]
+48035 DEBUG [2020-06-10 11:36:25]  {conn-10005, pstmt-20006} executed. 11.3258 millis. select opername as name,sum(price) as value from bus_rent
+		where
+		DATE_FORMAT(createtime,"%Y")=? GROUP BY opername
+48035 DEBUG [2020-06-10 11:36:25]  {conn-10005, pstmt-20006, rs-50010} open
+48035 DEBUG [2020-06-10 11:36:25]  {conn-10005, pstmt-20006, rs-50010} Header: [opername, value]
+48035 DEBUG [2020-06-10 11:36:25]  {conn-10005, pstmt-20006, rs-50010} Result: [超级管理员1, 1500.0]
+48035 DEBUG [2020-06-10 11:36:25]  {conn-10005, pstmt-20006, rs-50010} closed
+48035 DEBUG [2020-06-10 11:36:25]  {conn-10005, pstmt-20006} clearParameters. 
+48035 DEBUG [2020-06-10 11:36:25]  {conn-10005} pool-recycle
+520313 DEBUG [2020-06-10 11:44:18]  {conn-10005} pool-connect
+520314 DEBUG [2020-06-10 11:44:18]  {conn-10005, pstmt-20006} Parameters : [null]
+520314 DEBUG [2020-06-10 11:44:18]  {conn-10005, pstmt-20006} Types : [OTHER]
+520323 DEBUG [2020-06-10 11:44:18]  {conn-10005, pstmt-20006} executed. 9.3494 millis. select opername as name,sum(price) as value from bus_rent
+		where
+		DATE_FORMAT(createtime,"%Y")=? GROUP BY opername
+520323 DEBUG [2020-06-10 11:44:18]  {conn-10005, pstmt-20006, rs-50011} open
+520323 DEBUG [2020-06-10 11:44:18]  {conn-10005, pstmt-20006, rs-50011} Header: [opername, value]
+520324 DEBUG [2020-06-10 11:44:18]  {conn-10005, pstmt-20006, rs-50011} closed
+520324 DEBUG [2020-06-10 11:44:18]  {conn-10005, pstmt-20006} clearParameters. 
+520324 DEBUG [2020-06-10 11:44:18]  {conn-10005} pool-recycle
+551672 DEBUG [2020-06-10 11:44:49]  {conn-10005} pool-connect
+551672 DEBUG [2020-06-10 11:44:49]  {conn-10005, pstmt-20006} Parameters : [null]
+551672 DEBUG [2020-06-10 11:44:49]  {conn-10005, pstmt-20006} Types : [OTHER]
+551682 DEBUG [2020-06-10 11:44:49]  {conn-10005, pstmt-20006} executed. 9.7867 millis. select opername as name,sum(price) as value from bus_rent
+		where
+		DATE_FORMAT(createtime,"%Y")=? GROUP BY opername
+551682 DEBUG [2020-06-10 11:44:49]  {conn-10005, pstmt-20006, rs-50012} open
+551682 DEBUG [2020-06-10 11:44:49]  {conn-10005, pstmt-20006, rs-50012} Header: [opername, value]
+551683 DEBUG [2020-06-10 11:44:49]  {conn-10005, pstmt-20006, rs-50012} closed
+551683 DEBUG [2020-06-10 11:44:49]  {conn-10005, pstmt-20006} clearParameters. 
+551683 DEBUG [2020-06-10 11:44:49]  {conn-10005} pool-recycle
